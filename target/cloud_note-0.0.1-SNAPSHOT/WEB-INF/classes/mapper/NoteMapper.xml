@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+
+<!-- 
+	命名空间:根据命名空间可以更准确的指定为某张表.
+	Mapper接口(dao),包名+类名 ==命名空间的名字
+-->
+<mapper namespace="com.tedu.cloudnote.dao.NoteDAO">
+	
+	
+	<!-- 
+		根据cn_notebook_id查询
+		parameterType属性:如果返回值为一个整数,标准用法java.lang.Integer ,可以简写成 int
+		#{id1}:里面的参数随便写
+	 -->
+	 <select id="findByBookId" parameterType="string" resultType="com.tedu.cloudnote.entity.Note">
+	 	select * from cn_note where cn_notebook_id = #{noteBookId} and cn_note_status_id='1'
+	 </select>
+	 
+	 <!-- 根据笔记id查找笔记 -->
+	 <select id="findByNoteId" parameterType="string" resultType="com.tedu.cloudnote.entity.Note">
+	 	select * from cn_note where cn_note_id = #{noteId} 
+	 </select>
+	 
+	 <!-- 保存笔记 -->
+	 <update id="saveNote" parameterType="com.tedu.cloudnote.entity.Note">
+	 	update cn_note set               
+		cn_notebook_id =#{cn_notebook_id},         
+		cn_user_id  =#{cn_user_id},             
+		cn_note_status_id  =#{cn_note_status_id},      
+		cn_note_type_id   =#{cn_note_type_id},       
+		cn_note_title   =#{cn_note_title},         
+		cn_note_body   =#{cn_note_body},          
+		cn_note_create_time   =#{cn_note_create_time},   
+		cn_note_last_modify_time  =#{cn_note_last_modify_time}
+	 	where cn_note_id=#{cn_note_id}
+	 </update>
+	 
+	 <!-- 插入笔记 -->
+	 <insert id="createNote" parameterType="com.tedu.cloudnote.entity.Note" >
+	 	insert into cn_note values(
+	 	#{cn_note_id },             
+		#{cn_notebook_id   },       
+		#{cn_user_id     },         
+		#{cn_note_status_id },      
+		#{cn_note_type_id  },       
+		#{cn_note_title   },        
+		#{cn_note_body  },          
+		#{cn_note_create_time  },   
+		#{cn_note_last_modify_time}
+	 	)
+	 </insert>
+	 
+	 <!-- 删除笔记 ,收入回收站 -->
+	 <update id="updateStatus" parameterType="string" >
+	 	update cn_note set cn_note_status_id='2' where cn_note_id=#{noteId}
+	 </update>
+	 
+	 <!-- 移动笔记, -->
+	 <update id="moveNote" >
+	 	update cn_note set cn_notebook_id = #{0} where cn_note_id=#{1}
+	 </update>
+</mapper>
