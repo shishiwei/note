@@ -42,6 +42,10 @@ function loadUserBooks(){
 						//封装了,复用
 						createNoteBookLi(bookName,bookId);
 					}
+				}else {
+					//系统异常
+					alert(result.msg);
+
 				}
 				// $li.data("bookId",bookId);//将值与jquery对象元素绑定
 				
@@ -131,7 +135,7 @@ function loadUserNotes(){
 				for(i=0;i<notes.length;i++){
 					//获取笔记id
 					var noteId = notes[i].cn_note_id;
-					
+					var bookId = notes[i].cn_notebook_id;
 					//获取笔记本名称
 					var noteTitle = notes[i].cn_note_title;
 					
@@ -157,13 +161,15 @@ function loadUserNotes(){
 					$li = $(sli);
 					//绑定值
 					$li.data("noteId",noteId);//将值与jquery对象元素绑
+					$li.data("bookId",bookId);//将值与jquery对象元素绑
 					//console.log($li.data("noteId"));
 					////添加到列表
 					$("#note_ul").append($li);
 				}
-				
-			}else{
-				//没有笔记
+
+			}else if(result.status==2){
+				//系统异常
+				alert(result.msg);
 			}
 		},
 		error:function(){
@@ -195,7 +201,7 @@ function loadNote(){
 		dataType:"json",
 		success:function(result){
 			var note = result.data;
-			//console.log(note);
+
 			if(result.status==0){
 				//有内容
 				//将笔记标题 填入
@@ -206,9 +212,9 @@ function loadNote(){
 				if(note.cn_note_body){ //不判断的话 空值传入就会报错
 					um.setContent(note.cn_note_body);
 				}
-			}else{
-				//没有内容
-				
+			}else if(result.status==2){
+				//系统异常
+				alert(result.msg);
 			}
 		},
 		error:function(){
@@ -255,9 +261,10 @@ function createNoteBook(){
 					
 					//模拟点击 "x" "quxiao",退出添加界面
 					$("#can .close").click();
-					
-				}else{//创建失败!
-					
+
+				}else if(result.status==2){
+					//系统异常
+					alert(result.msg);
 				}
 			},
 			error:function(){

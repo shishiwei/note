@@ -25,11 +25,24 @@ public class NoteController implements Serializable {
 	
 	@Resource(name="noteService")
 	private NoteService noteService;
+
+	/**
+	 *出错返回信息
+     * @return
+     */
+	@RequestMapping("/exception.do")
+	@ResponseBody
+	public NoteResult<Object> Exception(){
+		NoteResult<Object> nr = new NoteResult<Object>();
+		nr.setStatus(2);
+		nr.setMsg("系统异常，请联系管理员");
+		return nr;
+	}
 	
 	/** 
 	 *    
 	 * 通过用户id查找该用户的所有笔记本
-	 * @param userId用户id
+	 * @param
 	 * @return该用户的笔记本集合
 	 */
 	@RequestMapping("/findAllNoteBook.do")
@@ -41,7 +54,7 @@ public class NoteController implements Serializable {
 	
 	/**
 	 * 通过笔记本id查找 该笔记本的所有笔记
-	 * @param bookId笔记本id
+	 * @param bookId 笔记本id
 	 * @return该笔记本的笔记集合
 	 */
 	@RequestMapping("/loadNotes.do")
@@ -54,7 +67,7 @@ public class NoteController implements Serializable {
 	}
 	/**
 	 * 通过笔记id 查找笔记
-	 * @param noteId笔记id
+	 * @param noteId 笔记id
 	 * @return 返回一个笔记对象
 	 */
 	@RequestMapping("/loadnote.do")
@@ -113,15 +126,15 @@ public class NoteController implements Serializable {
 	 */
 	@RequestMapping("/deleteNote.do")
 	@ResponseBody
-	public NoteResult<Object> updateStatus(String noteId){
-		NoteResult<Object> nr = noteService.updateStatus(noteId);
+	public NoteResult<Object> updateStatus(String noteId,String bookId){
+		NoteResult<Object> nr = noteService.updateStatus(noteId,bookId);
 		return nr;
 	}
 	
 	@RequestMapping("/moveNote.do")
 	@ResponseBody
-	public NoteResult<Object> moveNote(String bookId,String noteId){
-		NoteResult<Object> nr = noteService.moveNote(bookId, noteId);
+	public NoteResult<Object> moveNote(String bookId,String noteId,String orgBookId){
+		NoteResult<Object> nr = noteService.moveNote(bookId, noteId,orgBookId);
 		return nr;
 	}
 	

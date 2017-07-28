@@ -34,8 +34,8 @@
 		容器才会扫描mvc相关的注解,比如@RequestMapping
 	-->
 	<mvc:annotation-driven></mvc:annotation-driven>
-	
-	
+
+	<bean id="exceptionResolver" class="com.tedu.cloudnote.resolver.MobileExceptionResolver"/>
 	
 	
 </beans>

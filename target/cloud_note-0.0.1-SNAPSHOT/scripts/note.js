@@ -20,11 +20,12 @@ function showMenu(){
 //删除笔记
 function deleteNote(){
 	var noteId = $("#note_ul a.checked").parent().data("noteId");
+	var bookId = $("#note_ul a.checked").parent().data("bookId");
 	//console.log(noteId);
 	$.ajax({
 		url:path+"note/deleteNote.do",
 		type:"post",
-		data:{"noteId":noteId},
+		data:{"noteId":noteId,"bookId":bookId},
 		dataType:"json",
 		success:function(result){
 			if(result.status==0){
@@ -33,7 +34,10 @@ function deleteNote(){
 				//模拟点击 "x" "quxiao",退出添加界面
 				$("#can .close").click();
 				alert(result.msg);
-			}else{
+			}else if(result.status==2){
+				//系统异常
+				alert(result.msg);
+			} else{
 				//失败
 				console.log(result.msg);
 			}
@@ -70,7 +74,10 @@ function createNote(){
 					$("#book_ul a.checked").parent().click();
 					//模拟点击 "x" "quxiao",退出添加界面
 					$("#can .close").click();
-					
+
+				}else if(result.status==2){
+					//系统异常
+					alert(result.msg);
 				}else{//创建失败!
 					
 				}
@@ -133,6 +140,9 @@ function save(){
 					$("#note_ul .checked").html(str);
 					
 					console.log(result.msg);
+				}else if(result.status==2){
+					//系统异常
+					alert(result.msg);
 				}else{//保存失败!
 					console.log(result.msg);
 				}
@@ -149,6 +159,7 @@ function sureMove(){
 	//获取请求参数
 	//1.获取选举中的笔记li及笔记id
 	var noteId = $("#note_ul a.checked").parent().data("noteId");
+	var orgBookId = $("#note_ul a.checked").parent().data("bookId");
 	var bookId = $("#moveSelect").val();//获取下拉选笔记本id
 	//2.参数检查
 	
@@ -156,12 +167,15 @@ function sureMove(){
 	$.ajax({
 		url:"note/moveNote.do",
 		type:"post",
-		data:{"noteId":noteId,"bookId":bookId},
+		data:{"noteId":noteId,"bookId":bookId,"orgBookId":orgBookId},
 		dataType:"json",
 		success:function(result){
 			if(result.status==0){//成功
 				alert(result.msg);
 				$("#book_ul a.checked").click();//刷新
+			}else if(result.status==2){
+				//系统异常
+				alert(result.msg);
 			}else{
 				console.log(result.msg);
 			}

@@ -805,11 +805,11 @@ pre code {
 }
 
 .col-xs-3 {
-	width: 25%
+	width: 15%
 }
 
 .col-xs-2 {
-	width: 16.666666666666664%
+	width: 10%
 }
 
 .col-xs-1 {
@@ -998,7 +998,7 @@ pre code {
 	}
 
 	.col-sm-7 {
-		width: 58.333333333333336%
+		width: 75%
 	}
 
 	.col-sm-6 {
