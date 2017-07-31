@@ -165,7 +165,7 @@ function sureMove(){
 	
 	//3.发送ajax请求
 	$.ajax({
-		url:"note/moveNote.do",
+		url:path+"note/moveNote.do",
 		type:"post",
 		data:{"noteId":noteId,"bookId":bookId,"orgBookId":orgBookId},
 		dataType:"json",
