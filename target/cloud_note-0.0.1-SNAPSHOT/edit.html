@@ -99,9 +99,9 @@
 				$("#search_ul").on("click","li",viewShareNote);
 				
 				//点击收藏按钮 收藏
-				$("#search_ul").on("click",".fa-star",alertSureShareWindow);
+				$("#search_ul").on("click",".fa-star",alertSureCollectionWindow);
 				//选择笔记本后收藏
-				$("#can").on("click",".sure",sureCollection);
+				$("#can").on("click","#collection",sureCollection);
 				
 				//点击收藏笔记本 ,显示收藏的笔记
 				$("#like_button").click(viewCollections);

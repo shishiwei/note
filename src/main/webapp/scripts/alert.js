@@ -37,7 +37,7 @@ function alertSureShareWindow(){
 }
 
 //确定收藏弹床
-function alertSureShareWindow(){
+function alertSureCollectionWindow(){
 	$("#can").load("alert/alert_like.html");
 	$(".opacity_bg").show();
 }
