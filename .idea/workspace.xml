@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eafbca3d-bf8d-4f61-9160-67e687ab2172" name="Default" comment="log4j">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/ico/stark.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/ico/valar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tedu/cloudnote/dao/ShareDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/tedu/cloudnote/dao/ShareDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tedu/cloudnote/service/ShareServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/tedu/cloudnote/service/ShareServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/com/tedu/cloudnote/dao/ShareDAO.class" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/com/tedu/cloudnote/dao/ShareDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/com/tedu/cloudnote/service/ShareServiceImpl.class" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/com/tedu/cloudnote/service/ShareServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tedu/cloudnote/dao/ShareDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/tedu/cloudnote/dao/ShareDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tedu/cloudnote/service/ShareServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tedu/cloudnote/service/ShareServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/conf/db.properties" afterPath="$PROJECT_DIR$/src/main/resources/conf/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/shareMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/shareMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/edit.html" afterPath="$PROJECT_DIR$/src/main/webapp/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/basevalue.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/basevalue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/shareMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/shareMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/mapper/shareMapper.xml" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/mapper/shareMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/edit.html" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/edit.html" />
     </list>
     <ignored path="cloud_note.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +30,8 @@
       <file leaf-file-name="edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3510637">
-              <caret line="209" column="26" selection-start-line="209" selection-start-column="26" selection-end-line="209" selection-end-column="26" />
+            <state vertical-scroll-proportion="-3.5">
+              <caret line="213" column="32" selection-start-line="213" selection-start-column="32" selection-end-line="213" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -67,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basevalue.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/basevalue.js">
+      <file leaf-file-name="db.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/conf/db.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36486486">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.2027027">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -81,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tedu/cloudnote/service/NoteServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="173" column="18" selection-start-line="173" selection-start-column="18" selection-end-line="173" selection-end-column="18" />
+              <caret line="158" column="7" selection-start-line="158" selection-start-column="7" selection-end-line="158" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -199,12 +183,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/alert.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/note.js" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/NoteMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/conf/db.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/tedu/cloudnote/dao/ShareDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tedu/cloudnote/service/ShareServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/shareMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/edit.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/scripts/basevalue.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/conf/db.properties" />
       </list>
     </option>
   </component>
@@ -1529,7 +1513,7 @@
       <workItem from="1501258871299" duration="1255000" />
       <workItem from="1501260401765" duration="933000" />
       <workItem from="1501485330279" duration="17492000" />
-      <workItem from="1501559357764" duration="5511000" />
+      <workItem from="1501559357764" duration="6501000" />
     </task>
     <task id="LOCAL-00001" summary="log4j">
       <created>1500868230755</created>
@@ -1559,7 +1543,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102011000" />
+    <option name="totallyTimeSpent" value="103001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1208" width="1936" height="1216" extended-state="6" />
@@ -1622,24 +1606,6 @@
           <line>149</line>
           <properties />
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/tedu/cloudnote/service/NoteServiceImpl.java</url>
-          <line>167</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/tedu/cloudnote/service/NoteServiceImpl.java</url>
-          <line>168</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/tedu/cloudnote/service/NoteServiceImpl.java</url>
-          <line>173</line>
-          <properties />
-          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="39" />
@@ -1881,13 +1847,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/conf/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47487438">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/images/dummy/8986f28e.stilearn-logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1999,10 +1958,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/basevalue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tedu/cloudnote/service/NoteServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="158" column="7" selection-start-line="158" selection-start-column="7" selection-end-line="158" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3510637">
-          <caret line="209" column="26" selection-start-line="209" selection-start-column="26" selection-end-line="209" selection-end-column="26" />
+        <state vertical-scroll-proportion="-3.5">
+          <caret line="213" column="32" selection-start-line="213" selection-start-column="32" selection-end-line="213" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -2021,18 +1996,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tedu/cloudnote/service/NoteServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/conf/db.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="173" column="18" selection-start-line="173" selection-start-column="18" selection-end-line="173" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/basevalue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36486486">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.2027027">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
           <folding />
         </state>
       </provider>
