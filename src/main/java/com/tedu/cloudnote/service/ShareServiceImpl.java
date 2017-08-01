@@ -67,7 +67,7 @@ public class ShareServiceImpl implements ShareService,Serializable {
 		sb.insert(0,"%");
 		sb.append("%");
 		
-		List<Share> list = shareDAO.selectByTitle(sb.toString());
+		List<Share> list = shareDAO.selectByTitle(sb.toString(),sb.toString());
 		
 		if(list.size()>0){
 			nr.setStatus(0);
@@ -84,7 +84,7 @@ public class ShareServiceImpl implements ShareService,Serializable {
 	 */
 	public NoteResult<Share> findByShareId(String shareId) {
 		NoteResult<Share> nr = new NoteResult<Share>();
-		Share share = shareDAO.findByShareId(shareId);
+		Share share = shareDAO.findByShareId(shareId,shareId);
 		if(share!=null){
 			nr.setStatus(0);
 			nr.setData(share);

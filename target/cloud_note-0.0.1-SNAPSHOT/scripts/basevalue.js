@@ -5,6 +5,6 @@ var pathName = window.document.location.pathname;
 var pos = curWwwPath.indexOf(pathName);
 //获取主机地址，如： http://localhost:8083
 var pathP = curWwwPath.substring(0, pos);
-var path = pathP+"/cloud_note/";
+var path = pathP+"/";
 
 //var path = "http://120.77.35.124:8080/cloud_note/";//为了更改
