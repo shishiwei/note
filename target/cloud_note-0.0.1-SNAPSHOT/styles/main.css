@@ -1,4 +1,21 @@
-﻿.loader-timer {
+﻿/*.containerXXX {*/
+	/*!*background: url('../images/bg_left_bottom_71.png'), url('../images/bg_right_bottom_71.png'), url('../images/logo_71.png'), url('../images/001_02.jpg'), url('../images/001_02.jpg');*!*/
+	/*!*background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;*!*/
+	/*!*background-position: left bottom, right bottom, top center, left top, right top;*!*/
+	/*!*background-attachment: fixed, fixed, scroll, scroll, scroll;*!*/
+	/*!*padding-top: 100px;*!*/
+
+
+	/*!* 左下、右下、中间、左上、右上 *!*/
+	/*background: url('../ico/header.jpg'), url('../ico/header.jpg');*/
+	/*background-repeat: no-repeat, no-repeat;*/
+	/*background-position: left bottom, right bottom;*/
+	/*background-attachment: fixed, fixed;*/
+	/*!*padding-top: 189px;*!*/
+
+/*}*/
+
+.loader-timer {
 	position: relative;
 	margin: 0;
 	width: 24px;
