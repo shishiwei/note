@@ -27,13 +27,14 @@
 	 
 	 <!-- 插入笔记本 -->
 	 <insert id="createNoteBook" parameterType="com.tedu.cloudnote.entity.NoteBook">
-	 	insert into cn_notebook values(
+	 	insert into cn_notebook   values(
 	 	#{cn_notebook_id},
 	 	#{cn_user_id},
 	 	#{cn_notebook_type_id},
 	 	#{cn_notebook_name},
 	 	#{cn_notebook_desc},
-	 	#{cn_notebook_createtime})
+	 	#{cn_notebook_createtime},
+	 	NULL)
 	 </insert>
 	 
 </mapper>
