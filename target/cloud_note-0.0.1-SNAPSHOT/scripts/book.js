@@ -189,8 +189,8 @@ function loadNote(){
 	////清除之前选中的 去掉被选中的样式
 	$("#note_ul a").removeClass("checked");
 	//um.setContent(" ");
-	um.execCommand('clearlocaldata');
-
+	//um.execCommand('clearlocaldata');
+	um.setContent('<p> <br/></p>');
 	//给选中的笔记添加选中的样式
 	$(this).children().addClass("checked");
 	//获取请求参数noteId
