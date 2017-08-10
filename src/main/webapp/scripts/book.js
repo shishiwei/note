@@ -114,8 +114,9 @@ function loadUserNotes(){
 	$("#note_ul").empty();
 	//清除编辑笔记中的内容
 	$("#input_note_title").val("");
-	$("#myEditor").html("");
-	
+	//$("#myEditor").html("");
+	um.setContent('<p> <br/></p>');
+
 	//给选中的笔记添加选中的样式
 	$(this).children().addClass("checked");
 	//获取请求参数bookId
@@ -187,7 +188,9 @@ function loadNote(){
 	
 	////清除之前选中的 去掉被选中的样式
 	$("#note_ul a").removeClass("checked");
-	um.setContent(" ");
+	//um.setContent(" ");
+	um.execCommand('clearlocaldata');
+
 	//给选中的笔记添加选中的样式
 	$(this).children().addClass("checked");
 	//获取请求参数noteId
