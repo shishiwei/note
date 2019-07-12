@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta charset="utf-8">
+    <title>测试</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
 </head>
 <body>
-$END$
+<div id="app">
+    <i-button @click="show">Click me!</i-button>
+    <Modal v-model="visible" title="Welcome">Welcome to iView</Modal>
+    <i-menu>
+        <Row>
+            <Col span="8">
+            <i-Menu :theme="theme2" :open-names="['1']" accordion>
+                <i-Submenu name="1">
+                    <i-menu slot="title">
+                        <Icon type="ios-paper" />
+                        内容管理
+                    </i-menu>
+                    <i-MenuItem name="1-1">文章管理</i-MenuItem>
+                    <i-MenuItem name="1-2">评论管理</i-MenuItem>
+                    <i-MenuItem name="1-3">举报管理</i-MenuItem>
+                </i-Submenu>
+                <i-Submenu name="2">
+                    <i-menu slot="title">
+                        <Icon type="ios-people" />
+                        用户管理
+                    </i-menu>
+                    <i-MenuItem name="2-1">新增用户</i-MenuItem>
+                    <i-MenuItem name="2-2">活跃用户</i-MenuItem>
+                </i-Submenu>
+                <i-Submenu name="3">
+                    <i-menu slot="title">
+                        <Icon type="ios-stats" />
+                        统计分析
+                    </i-menu>
+                    <i-MenuGroup title="使用">
+                        <i-MenuItem name="3-1">新增和启动</i-MenuItem>
+                        <i-MenuItem name="3-2">活跃分析</i-MenuItem>
+                        <i-MenuItem name="3-3">时段分析</i-MenuItem>
+                    </i-MenuGroup>
+                    <i-MenuGroup title="留存">
+                        <i-MenuItem name="3-4">用户留存</i-MenuItem>
+                        <i-MenuItem name="3-5">流失用户</i-MenuItem>
+                    </i-MenuGroup>
+                </i-Submenu>
+            </i-Menu>
+            </Col>
+        </Row>
+        <br>
+        <p>Change theme</p>
+        <RadioGroup v-model="theme2">
+            <Radio label="light"></Radio>
+            <Radio label="dark"></Radio>
+        </RadioGroup>
+    </i-menu>
+</div>
+<script>
+
+    new Vue({
+        el: '#app',
+        data: {
+            visible: false,
+            theme2: 'light'
+        },
+        methods: {
+            show: function () {
+                this.visible = true;
+            }
+        }
+    })
+</script>
 </body>
 </html>
